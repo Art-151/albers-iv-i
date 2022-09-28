@@ -10,11 +10,11 @@ let clrs = [
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  noStroke();
+  stroke('black'); // add black stroke
 }
 
 function draw() {
- background(220);
+ background(255); // change the background color to white
  canvasRect(clrs[4], height/2, height/2, false);
  canvasRect(clrs[0], height/2, 0, false);
  fill(clrs[2]); 
