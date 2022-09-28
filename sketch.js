@@ -1,20 +1,20 @@
 
 let clrs = [
-'#E27F34', //top 0
-'#FEF254', //middle top 1
-'#A36C33', //middle strip 2
-'#042060', //middle bottom 3
-'#3778AE' //bottom 4
+'#E4GDCD', //top 0
+'#FFFFFF', //middle top 1
+'#444444', //middle strip 2
+'#010101', //middle bottom 3
+'#122121' //bottom 4
 ]
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  noStroke();
+  stroke('black'); // add black stroke
 }
 
 function draw() {
- background(220);
+ background(255); // change the background color to white
  canvasRect(clrs[4], height/2, height/2, false);
  canvasRect(clrs[0], height/2, 0, false);
  fill(clrs[2]); 
